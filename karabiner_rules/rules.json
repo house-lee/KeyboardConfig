@@ -1,0 +1,23 @@
+{
+    "type": "basic",
+    "from": {
+        "key_code": "f",
+        "modifiers": {
+            "mandatory": [
+                "right_command"
+            ],
+            "optional": [
+                "caps_lock",
+                "option"
+            ]
+        }
+    },
+    "to": [
+        {
+            "key_code": "right_arrow",
+            "modifiers": [
+                "option"
+              ]
+        }
+    ]
+}
