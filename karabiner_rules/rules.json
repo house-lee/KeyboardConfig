@@ -1,16 +1,16 @@
 {
-  "title": "Vi Style Arrows",
+  "title": "House's HHKB",
   "rules": [
     {
-      "description": "Change Control + h/j/k/l to Arrows",
+      "description": "Change right_command + f/b to move to next/previous word",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "h",
+            "key_code": "f",
             "modifiers": {
               "mandatory": [
-                "control"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -19,17 +19,20 @@
           },
           "to": [
             {
-              "key_code": "left_arrow"
+              "key_code": "right_arrow",
+              "modifiers" : [
+                "option"
+              ]
             }
           ]
         },
         {
           "type": "basic",
           "from": {
-            "key_code": "j",
+            "key_code": "b",
             "modifiers": {
               "mandatory": [
-                "control"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -38,60 +41,47 @@
           },
           "to": [
             {
-              "key_code": "down_arrow"
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "k",
-            "modifiers": {
-              "mandatory": [
-                "control"
-              ],
-              "optional": [
-                "caps_lock"
+              "key_code": "left_arrow",
+              "modifiers" : [
+                "option"
               ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "up_arrow"
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "l",
-            "modifiers": {
-              "mandatory": [
-                "control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "right_arrow"
             }
           ]
         }
       ]
     },
     {
-      "description": "Change Option + h/j/k/l to Arrows",
+      "description": "Select next/previous word by pressing ....hmmmmmm....not decided yet",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "h",
+            "key_code": "f",
             "modifiers": {
               "mandatory": [
+                "right_command"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers" : [
                 "option"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -100,226 +90,10 @@
           },
           "to": [
             {
-              "key_code": "left_arrow"
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "j",
-            "modifiers": {
-              "mandatory": [
+              "key_code": "left_arrow",
+              "modifiers" : [
                 "option"
-              ],
-              "optional": [
-                "caps_lock"
               ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "down_arrow"
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "k",
-            "modifiers": {
-              "mandatory": [
-                "option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "up_arrow"
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "l",
-            "modifiers": {
-              "mandatory": [
-                "option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "right_arrow"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Change Fn + h/j/k/l to Arrows",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "fn"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "left_arrow"
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "j",
-            "modifiers": {
-              "mandatory": [
-                "fn"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "down_arrow"
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "k",
-            "modifiers": {
-              "mandatory": [
-                "fn"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "up_arrow"
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "l",
-            "modifiers": {
-              "mandatory": [
-                "fn"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "right_arrow"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Change command + h/j/k/l to Arrows",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "command"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "left_arrow"
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "j",
-            "modifiers": {
-              "mandatory": [
-                "command"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "down_arrow"
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "k",
-            "modifiers": {
-              "mandatory": [
-                "command"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "up_arrow"
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "l",
-            "modifiers": {
-              "mandatory": [
-                "command"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "right_arrow"
             }
           ]
         }
