@@ -1,16 +1,16 @@
 {
-  "title": "House's HHKB",
+  "title": "Vi Style Arrows",
   "rules": [
     {
-      "description": "Change right_command + f/b to move to next/previous word",
+      "description": "Change Control + h/j/k/l to Arrows",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "f",
+            "key_code": "h",
             "modifiers": {
               "mandatory": [
-                "right_command"
+                "control"
               ],
               "optional": [
                 "caps_lock"
@@ -19,20 +19,17 @@
           },
           "to": [
             {
-              "key_code": "right_arrow",
-              "modifiers" : [
-                "option"
-              ]
+              "key_code": "left_arrow"
             }
           ]
         },
         {
           "type": "basic",
           "from": {
-            "key_code": "b",
+            "key_code": "j",
             "modifiers": {
               "mandatory": [
-                "right_command"
+                "control"
               ],
               "optional": [
                 "caps_lock"
@@ -41,10 +38,45 @@
           },
           "to": [
             {
-              "key_code": "left_arrow",
-              "modifiers" : [
-                "option"
+              "key_code": "down_arrow"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ],
+              "optional": [
+                "caps_lock"
               ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "up_arrow"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow"
             }
           ]
         }
